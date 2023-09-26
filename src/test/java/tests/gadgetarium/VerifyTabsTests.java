@@ -1,11 +1,11 @@
-package tests;
+package tests.gadgetarium;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import pages.AboutStorePage;
-import pages.CommonPage;
-import pages.DeliveryPage;
+import pages.gadgetarium.AboutStorePage;
+import pages.gadgetarium.CommonPage;
+import pages.gadgetarium.DeliveryPage;
 import utilities.Driver;
 
 public class VerifyTabsTests {

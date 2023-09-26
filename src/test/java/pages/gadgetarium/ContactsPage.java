@@ -1,4 +1,4 @@
-package pages;
+package pages.gadgetarium;
 
 public class ContactsPage {
 }

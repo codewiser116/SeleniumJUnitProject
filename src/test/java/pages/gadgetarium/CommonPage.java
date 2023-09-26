@@ -1,18 +1,26 @@
-package pages;
+package pages.gadgetarium;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class DeliveryPage {
+public class CommonPage {
 
-    public DeliveryPage(){
+    public CommonPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//h6[text()='Pickup from the warehouse']")
-    public WebElement pickupFromWarehouse;
+    @FindBy(linkText = "About Store")
+    public WebElement aboutStoreTab;
+
+    @FindBy(linkText = "Delivery")
+    public WebElement deliveryTab;
+
+
+
+
+
 
 
 

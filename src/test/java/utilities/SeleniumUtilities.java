@@ -5,7 +5,21 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class SeleniumUtilities {
+    /**
+    String format can be:
+    dd/MM/yyyy
+    yyyy/MM/dd
+    MM/dd/yyyy
+    */
+    public static String getCurrentDate(String format) {
+        LocalDate dateObj = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
+        return dateObj.format(formatter);
+    }
 
 
 
